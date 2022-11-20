@@ -17,11 +17,13 @@ export const Projects = () => {
         onMouseOut={() => setOpenDescription(false)}
         >
 
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <ProjectCard 
             description={project.description} 
             imgUrl={require(`../../assets/projects/${project.imgUrl}`)} 
-            technologies={project.technologies}/>
+            technologies={project.technologies}
+            key={index}
+            />
         ))}
       </div>
     </section>

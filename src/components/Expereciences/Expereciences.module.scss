@@ -7,12 +7,18 @@
     gap: 3rem;
 
     padding: 6rem 0;
-    color: colors.$gray300
+    color: colors.$gray300;
 }
 
 .expereciences-content {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
 }
 
 .current-experecience {

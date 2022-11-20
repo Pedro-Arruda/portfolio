@@ -8,7 +8,13 @@
     
     padding: 2rem 0;
     font-size: 1.25rem;
-    color: colors.$gray300
+    color: colors.$gray300;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
 }
 
 .wpp-container, .mail-container, .links-container {

@@ -22,8 +22,8 @@ export const ProjectCard = ({imgUrl, technologies, description}: ProjectCardPros
           </div>
 
           <div className={styles["item-technologies"]}>
-            {technologies.map((item) => (
-                <img src={`${item.url}`} height={35}/>
+            {technologies.map((item, index) => (
+                <img src={`${item.url}`} height={35} key={index}/>
             ))}
           </div>
 

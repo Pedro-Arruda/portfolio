@@ -5,6 +5,12 @@
     justify-content: space-between;
 
     padding-top: 4rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
 }
 
 .hero-text {
@@ -23,6 +29,17 @@
     h1 {
         font-size: 3rem;
         color: colors.$cyan;
+    }
+
+    @media (max-width: 768px) {
+        p {
+            font-size: 1rem;
+            color: colors.$gray100;
+        }
+        h1 {
+            font-size: 2rem;
+            color: colors.$cyan;
+        }
     }
 }
 
