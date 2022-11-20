@@ -19,10 +19,10 @@ export const Footer = () => {
         </div>
 
         <div className={styles['links-container']}>
-            <a href="">
+            <a href="https://www.linkedin.com/in/pedro-scucuglia-arruda/" target='_blank'>
              <img src={githubIcon} height={30} />
             </a>
-            <a href="">
+            <a href="https://github.com/Pedro-Arruda" target='_blank'>
                 <img src={linkedinIcon} height={30}/>
             </a>
         </div>

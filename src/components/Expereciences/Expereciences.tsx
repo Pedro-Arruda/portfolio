@@ -25,11 +25,11 @@ export const Expereciences = () => {
             </div>
             <div className={(styles["experecience-text"])} >
                 {active === 'job' ?
-                <p>TEXTO DO TRABALHOOOOOOOOOOOOOOO <br />
+                <p>TEXTO DO TRABALHOO <br />
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever 
                 </p> : 
-                <p>TEXTO DA FACULDADEEEEEEEE <br />
+                <p>TEXTO DA FACULDADE <br />
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever 
                 </p>}
