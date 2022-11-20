@@ -1,0 +1,53 @@
+@use './colors.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: colors.$gray900;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 576px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 93.74%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    html {
+      font-size: 100%;
+    }
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul, li{
+    list-style: none ;
+}
+
+a{
+    text-decoration: none;
+    color: colors.$gray100
+}
+
+button {
+    width: max-content;
+    cursor: pointer;
+    padding: 0.5rem 3rem;
+    border-radius: 0.25rem;
+}

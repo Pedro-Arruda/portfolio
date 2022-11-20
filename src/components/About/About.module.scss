@@ -1,0 +1,44 @@
+@use '../../styles/colors.scss';
+
+.about-container {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img {
+    width: 400px;
+    height: 300px;
+    background-color: colors.$gray800;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    font-size: 1.25rem;
+    color: colors.$gray300;
+    letter-spacing: 1px;
+    width: 50%;
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        width: max-content;
+        font-size: 1rem;
+        letter-spacing: 2px;
+
+        background-color: transparent;
+        border: 2px solid colors.$violet;
+        color: colors.$gray300;
+
+        &:hover {
+            background-color: colors.$violet;
+            transition: 0.75s;
+        }
+    }
+}

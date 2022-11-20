@@ -1,0 +1,23 @@
+@use '../../styles/colors.scss';
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    
+     width: 500px;
+     background-color: colors.$gray700;
+     border-bottom: 5px solid colors.$violet;
+ 
+     .item-technologies {
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+
+       padding: 1rem 0.5rem;
+     }
+ 
+     .item-description {
+       color: colors.$gray300;
+       padding:  1rem;
+     }
+  }

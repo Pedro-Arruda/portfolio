@@ -1,0 +1,68 @@
+@use '../../styles/colors.scss';
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 4rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    
+    letter-spacing: 3px;
+
+    p {
+        font-size: 1.5rem;
+        color: colors.$gray100;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: colors.$cyan;
+    }
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 2rem;
+
+    button {
+        font-size: 1.25rem;
+        background-color: transparent;
+        color: colors.$gray100;
+        letter-spacing: 2px;
+    }
+
+    .btn-linkedin {
+        border: 2px solid colors.$cyan;
+        &:hover {
+            background-color: colors.$cyan;
+            color: black;
+            transition: 0.5s;
+        }
+
+    }
+
+    .btn-github {
+        border: 2px solid colors.$violet;
+        &:hover {
+            background-color: colors.$violet;
+            transition: 0.75s;
+        }
+    }
+
+    a {
+        display: flex;
+        gap: 0.75rem;
+    }
+}
+
+.hero-img {
+    width: 400px;
+    height: 400px;
+    background-color: colors.$gray800;
+}

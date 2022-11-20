@@ -1,0 +1,9 @@
+@use '../../styles/colors.scss';
+
+.section-title {
+    font-size: 2rem;
+    border-bottom: 1px solid colors.$violet;
+    color: colors.$gray300;
+    padding-bottom: 0.5rem;
+    width: max-content;
+}

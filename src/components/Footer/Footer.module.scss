@@ -1,0 +1,18 @@
+@use '../../styles//colors.scss';
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    
+    padding: 2rem 0;
+    font-size: 1.25rem;
+    color: colors.$gray300
+}
+
+.wpp-container, .mail-container, .links-container {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
