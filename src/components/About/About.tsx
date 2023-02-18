@@ -12,12 +12,10 @@ export const About = () => {
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever 
             </p>
-            <div>
-                <button> 
-                    <DownloadSimple size={24} />
-                    <p>Curriculo</p>
-                </button>
-            </div>
+            <button> 
+                <DownloadSimple size={24} />
+                <p>Curriculo</p>
+            </button>
         </div>
     </section>
   )

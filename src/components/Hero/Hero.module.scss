@@ -1,97 +1,90 @@
-@use '../../styles/colors.scss';
+@use "../../styles/colors.scss";
 
 .hero-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 
-    padding-top: 4rem;
+  padding-top: 4rem;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 
+    figure img {
+      width: 300px;
     }
+  }
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    
-    letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 
+  letter-spacing: 3px;
+
+  p {
+    font-size: 1.75rem;
+    color: colors.$gray100;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    color: colors.$cyan;
+  }
+
+  @media (max-width: 768px) {
     p {
-        font-size: 1.5rem;
-        color: colors.$gray100;
+      font-size: 1rem;
+      color: colors.$gray100;
     }
-
     h1 {
-        font-size: 3rem;
-        color: colors.$cyan;
+      font-size: 2rem;
+      color: colors.$cyan;
     }
-
-    @media (max-width: 768px) {
-        p {
-            font-size: 1rem;
-            color: colors.$gray100;
-        }
-        h1 {
-            font-size: 2rem;
-            color: colors.$cyan;
-        }
-        text-align: center;
-    }
+    text-align: center;
+  }
 }
 
 .hero-buttons {
+  display: flex;
+  gap: 2rem;
+
+  button {
+    font-size: 1.25rem;
+    background-color: transparent;
+    color: colors.$gray100;
+    letter-spacing: 2px;
+  }
+
+  .btn-linkedin {
+    border: 2px solid colors.$cyan;
+    &:hover {
+      background-color: colors.$cyan;
+      color: black;
+      transition: 0.5s;
+    }
+  }
+
+  .btn-github {
+    border: 2px solid colors.$violet;
+    &:hover {
+      background-color: colors.$violet;
+      transition: 0.75s;
+    }
+  }
+
+  a {
     display: flex;
-    gap: 2rem;
+    gap: 0.75rem;
+  }
 
-    button {
-        font-size: 1.25rem;
-        background-color: transparent;
-        color: colors.$gray100;
-        letter-spacing: 2px;
-    }
-
-    .btn-linkedin {
-        border: 2px solid colors.$cyan;
-        &:hover {
-            background-color: colors.$cyan;
-            color: black;
-            transition: 0.5s;
-        }
-
-    }
-
-    .btn-github {
-        border: 2px solid colors.$violet;
-        &:hover {
-            background-color: colors.$violet;
-            transition: 0.75s;
-        }
-    }
-
-    a {
-        display: flex;
-        gap: 0.75rem;
-    }
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.hero-img {
-    width: 400px;
-    height: 400px;
-    background-color: colors.$gray800;
-
-    @media (max-width: 768px) {
-        height: 300px;
-        width: 300px;
-    }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

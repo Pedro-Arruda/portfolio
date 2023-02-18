@@ -30,4 +30,32 @@
             transition: 0.5s;
         }
     }
+
+    .menu-icon {
+        background: transparent;
+        border: none;
+        display: none;
+
+        @media (max-width: 768px) {
+            display: inline;
+        }
+    }
+
+    .menu-mobile {
+        display: none;
+        background-color: colors.$gray700;
+        opacity: 0.3;
+        height: 300px;
+        width: 300px;
+        left: 0;
+
+        @media (max-width: 768px) {
+            display: inline;
+        }
+    }
+
+    // .active {
+    //     display: inline;
+    // }
 }
+
