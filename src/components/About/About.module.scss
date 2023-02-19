@@ -1,60 +1,63 @@
-@use '../../styles/colors.scss';
+@use "../../styles/colors.scss";
 
 .about-container {
-    padding-top: 6rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+  padding-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-    }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
 }
 
 .about-img {
-    width: 400px;
-    height: 300px;
-    background-color: colors.$gray800;
+  width: 400px;
+  height: 300px;
+  background-color: colors.$gray800;
 
-    @media (max-width: 768px) {
-        height: 300px;
-        width: 300px;
-    }
+  @media (max-width: 768px) {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+
+  font-size: 1.25rem;
+  color: colors.$gray300;
+  letter-spacing: 1px;
+  width: 50%;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+
+  a {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 1rem;
 
-    font-size: 1.25rem;
+    width: max-content;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 0.5rem 3rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 2px solid colors.$violet;
     color: colors.$gray300;
-    letter-spacing: 1px;
-    width: 50%;
 
-    @media (max-width: 768px) {
-        align-items: center;
-      }
-
-    button {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-
-        width: max-content;
-        font-size: 1rem;
-        letter-spacing: 2px;
-
-        background-color: transparent;
-        border: 2px solid colors.$violet;
-        color: colors.$gray300;
-
-        &:hover {
-            background-color: colors.$violet;
-            transition: 0.75s;
-        }
+    &:hover {
+      background-color: colors.$violet;
+      transition: 0.75s;
     }
+  }
 }

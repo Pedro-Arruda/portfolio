@@ -1,31 +1,32 @@
-import {useState} from 'react'
-import { SectionTitle } from '../SectionTitle/SectionTitle'
-import styles from './Projects.module.scss'
+import { useState } from "react";
+import { SectionTitle } from "../SectionTitle/SectionTitle";
+import styles from "./Projects.module.scss";
 
-import { ProjectCard } from '../ProjectCard/ProjectCard'
-import { projects } from '../../utils/projects'
+import { ProjectCard } from "../ProjectCard/ProjectCard";
+import { projects } from "../../utils/projects";
 
 export const Projects = () => {
-  const [openDescription, setOpenDescription] = useState(false)
+  const [openDescription, setOpenDescription] = useState(false);
 
   return (
-    <section className={styles['projects-container']} id={'projects'}>
-      <SectionTitle title='Meus projetos'/>
+    <section className={styles["projects-container"]} id={"projects"}>
+      <SectionTitle title="Meus projetos" />
 
-      <div className={styles["projects-list"]} 
-        onMouseOver={() => setOpenDescription(true)} 
+      <div
+        className={styles["projects-list"]}
+        onMouseOver={() => setOpenDescription(true)}
         onMouseOut={() => setOpenDescription(false)}
-        >
-
+      >
         {projects.map((project, index) => (
-          <ProjectCard 
-            description={project.description} 
-            imgUrl={require(`../../assets/projects/${project.imgUrl}`)} 
+          <ProjectCard
+            description={project.description}
+            imgUrl={require(`../../assets/projects/${project.imgUrl}`)}
+            urlProject={project.urlProject}
             technologies={project.technologies}
             key={index}
-            />
+          />
         ))}
       </div>
     </section>
-  )
-}
+  );
+};

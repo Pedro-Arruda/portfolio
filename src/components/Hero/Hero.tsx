@@ -11,6 +11,12 @@ export const Hero = () => {
         <h1>PEDRO ARRUDA</h1>
         <p>DESENVOLVEDOR FRONT END</p>
         <div className={styles["hero-buttons"]}>
+          <button className={styles["btn-github"]}>
+            <a href="https://github.com/Pedro-Arruda" target="_blank">
+              <img src={githubImg} alt="" height={20} width={20} />
+              GitHub
+            </a>
+          </button>
           <button className={styles["btn-linkedin"]}>
             <a
               href="https://www.linkedin.com/in/pedro-scucuglia-arruda/"
@@ -18,12 +24,6 @@ export const Hero = () => {
             >
               <img src={linkedinImg} alt="" height={18} width={18} />
               <span>Linkedin</span>
-            </a>
-          </button>
-          <button className={styles["btn-github"]}>
-            <a href="https://github.com/Pedro-Arruda" target="_blank">
-              <img src={githubImg} alt="" height={20} width={20} />
-              GitHub
             </a>
           </button>
         </div>

@@ -1,61 +1,73 @@
-@use '../../styles/colors.scss';
+@use "../../styles/colors.scss";
 
 .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 2rem;
+
+  h1 {
+    color: colors.$cyan;
+  }
+
+  ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 1.5rem;
 
-    padding-top: 2rem;
+    color: colors.$gray400;
+    font-size: 1.2rem;
 
-    h1 {
-        color: colors.$cyan;
+    @media (max-width: 768px) {
+      display: none;
     }
+  }
 
-    ul {
-        display: flex;
-        gap: 1.5rem;
-
-        color: colors.$gray400;
-        font-size: 1.2rem;
-
-        @media (max-width: 768px) {
-            display: none;
-        }
+  li {
+    cursor: pointer;
+    &:hover {
+      color: colors.$gray300;
+      transition: 0.5s;
     }
+  }
+
+  .menu-icon {
+    background: transparent;
+    border: none;
+    display: none;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background-color: colors.$gray800;
+  }
+
+  .menu-mobile {
+    display: none;
+    background-color: colors.$gray800;
+    position: absolute;
+    left: 0;
+    height: 200px;
+    width: 100%;
+
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
 
     li {
-        cursor: pointer;
-        &:hover {
-            color: colors.$gray300;
-            transition: 0.5s;
-        }
+      padding: 0.5rem 0;
     }
 
-    .menu-icon {
-        background: transparent;
-        border: none;
-        display: none;
-
-        @media (max-width: 768px) {
-            display: inline;
-        }
+    @media (max-width: 768px) {
+      display: inline;
     }
-
-    .menu-mobile {
-        display: none;
-        background-color: colors.$gray700;
-        opacity: 0.3;
-        height: 300px;
-        width: 300px;
-        left: 0;
-
-        @media (max-width: 768px) {
-            display: inline;
-        }
-    }
-
-    // .active {
-    //     display: inline;
-    // }
+  }
 }
-
