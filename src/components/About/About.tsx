@@ -6,7 +6,7 @@ import profilePick from "../../assets/about/profile3.jpeg";
 export const About = () => {
   return (
     <section className={styles["about-container"]} id="about">
-      <img src={profilePick} alt="" width={600} height={320} />
+      <img src={profilePick} alt="" width={400} height={320} />
 
       <div className={styles["about-text"]}>
         <h3>Sobre mim</h3>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./Header.module.scss";
 
 export const Header = () => {
-  const [menuMobile, setMenuMobile] = useState(true);
+  const [menuMobile, setMenuMobile] = useState(false);
   return (
     <section className={styles["header-container"]}>
       <h1>
