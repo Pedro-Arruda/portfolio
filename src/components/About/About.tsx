@@ -16,10 +16,11 @@ export const About = () => {
           Meu nome é Pedro Arruda, estudo programação desde 2021. Sempre amei e
           tive contato com tecnologia, e em 2022 dediquei meus estudos á área
           que mais tenho interesse, o front end. Estudo e trabalho com
-          tecnologias com React, Typescript, Sass, entre outros. Também tive
-          contato com Node e softwares de design como o Figma, desenvolvendo
-          algumas interfaces essencialmente para projetos pessoais. Também estou
-          cursando Análise e Desenvolvimento na ITE. Em constante aprendizado.
+          tecnologias com React, Typescript, Sass, API rest, entre outros.
+          Também tive contato com Node e softwares de design como o Figma,
+          desenvolvendo algumas interfaces essencialmente para projetos
+          pessoais. Também estou cursando Análise e Desenvolvimento na ITE. Em
+          constante aprendizado.
         </p>
 
         <a
